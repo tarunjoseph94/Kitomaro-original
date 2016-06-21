@@ -1,0 +1,75 @@
+<html>
+<head>
+<style type="text/css">
+div{
+	
+}
+
+.scene {
+	width: 40%;
+	height: 40%;
+	margin: 10px;	
+}
+
+.circle {
+	width: 40px;
+	height: 40px;	
+	border-top-right-radius: 40px;
+	float: right;
+	transform-origin: bottom left;
+}
+
+.aa,
+.cc,
+.ee,
+.gg,
+.ii {
+  animation: rotate1 3s ease-in-out alternate infinite;
+}
+
+.bb,
+.dd,
+.ff,
+.hh,
+.jj {
+  animation: rotate2 3s ease-in-out alternate infinite;
+  transform: rotate(100deg);
+}
+
+.aa {background: rgb(0, 152, 255);}
+.bb {background: rgb(100, 125, 255);}
+.cc {background: rgb(167, 98, 255);}
+.dd {background: rgb(237, 87, 255);}
+.ee {background: rgb(255, 81, 113);}
+.ff {background: rgb(255, 49, 148);}
+.gg {background: rgb(235, 47, 0);}
+.hh {background: rgb(232, 83, 0);}
+.ii {background: rgb(232, 120, 0);}
+.jj {background: rgb(232, 158, 0);}
+
+@keyframes rotate1 {
+	50% {transform: rotate(-360deg);}	
+}
+
+@keyframes rotate2 {
+	50% {transform: rotate(450deg);}	
+}
+
+ }
+  </style>
+</head>
+<body>
+<div class="scene">
+	<div class="circle aa"></div>
+	<div class="circle bb"></div>
+	<div class="circle cc"></div>
+	<div class="circle dd"></div>
+	<div class="circle ee"></div>
+	<div class="circle ff"></div>
+	<div class="circle gg"></div>
+	<div class="circle hh"></div>
+	<div class="circle ii"></div>
+	<div class="circle jj"></div>
+</div>
+</body>
+</html>
